@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timer Ends In"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"/>
+
+    <com.yashdev.countdowntimer.CountDownTimerView
+        android:id="@+id/countDownTimerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cdt_TimeMilliSeconds="7200000"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/titleText"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/customButton"
+        android:text="Show Timer in Dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/countDownTimerView"/>
+
+</RelativeLayout>
