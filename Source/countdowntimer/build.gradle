@@ -1,23 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
-
-ext {
-    bintrayRepo = 'CountDownTimer'
-    bintrayName = 'CountDownTimer'
-
-    // Maven metadata
-    publishedGroupId = 'com.yashdev.lib'
-    libraryName = 'CountDownTimer'
-    artifact = 'countdowntimer'
-
-    libraryDescription = 'Easiest way to show count down of time on Android. CountDownTimer Library offers lots of Customisation options.'
-    libraryVersion = '1.0.0'
-
-    developerId = 'yashdev'
-    developerName = 'yash Dev'
-    developerEmail = 'yash@oxywebs.com'
-}
 
 android {
     compileSdkVersion 29
@@ -51,6 +32,3 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
 }
-
-apply from: 'https://raw.githubusercontent.com/yashodharSepuri/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/yashodharSepuri/JCenter/master/bintrayv1.gradle'
